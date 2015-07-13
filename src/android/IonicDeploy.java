@@ -384,7 +384,7 @@ public class IonicDeploy extends CordovaPlugin {
       json.put("channel_tag", channel_tag);
 
       String params = json.toString();
-      byte[] postData = params.getBytes( StandardCharsets.UTF_8 );
+      byte[] postData = params.getBytes("UTF-8");//StandardCharsets.UTF_8 );
       int postDataLength = postData.length;
 
       URL url = new URL(this.server + endpoint);
